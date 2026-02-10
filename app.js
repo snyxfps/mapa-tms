@@ -5,12 +5,12 @@ const tmsList = [
   { nome: "BSOFT",            SMP: true,  Multicadastro: false, RCV: true  },
   { nome: "ESL",              SMP: true,  Multicadastro: false, RCV: false },
   { nome: "STRADA",           SMP: true,  Multicadastro: true,  RCV: false },
-  { nome: "SENIOR - AT&M",    SMP: true,  Multicadastro: false, RCV: false },
+  { nome: "SENIOR - AT&M",    SMP: true,  Multicadastro: false, RCV: true  },
   { nome: "BRK",              SMP: true,  Multicadastro: false, RCV: false },
   { nome: "SANKIA",           SMP: true,  Multicadastro: false, RCV: false },
   { nome: "MATRIXCARGO",      SMP: true,  Multicadastro: true,  RCV: false },
   { nome: "ZELA",             SMP: true,  Multicadastro: false, RCV: false },
-  { nome: "VCR",              SMP: true,  Multicadastro: false, RCV: false },
+  { nome: "VCR",              SMP: true,  Multicadastro: false, RCV: true  },
   { nome: "TRIZY",            SMP: true,  Multicadastro: false, RCV: false },
   { nome: "A3SOFT",           SMP: true,  Multicadastro: false, RCV: false },
   { nome: "SENSATTA",         SMP: true,  Multicadastro: false, RCV: false },
@@ -33,7 +33,24 @@ const tmsList = [
   { nome: "DSS",              SMP: true,  Multicadastro: false, RCV: true  },
   { nome: "PRÓCION",          SMP: false, Multicadastro: false, RCV: true  },
   { nome: "ETL",              SMP: false, Multicadastro: false, RCV: true  },
-  { nome: "SAP",              SMP: true,  Multicadastro: false, RCV: false }
+  { nome: "SAP",              SMP: true,  Multicadastro: false, RCV: false },
+  { nome: "SIL SISTEMA",      SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "SIIMP SISTEMA",    SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "A2O",              SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "FING",             SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "MASTER TRANSP",    SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "IMBRA",            SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "GW",               SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "SIBRAX SOFTWARE",  SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "NEOGRID",          SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "SIAT",             SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "SERVICE LOGIC",    SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "LOGCTe",           SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "TDS SISTEMAS",     SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "FRETE FACIL",      SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "DB FRETE",         SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "MITT",             SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "DATAMEX ONLINE",   SMP: false, Multicadastro: false, RCV: true  },
 ];
 
 let state = {
@@ -193,3 +210,4 @@ exportBtn.addEventListener("click", () => {
 
 // Init
 render();
+
