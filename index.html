@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mapa de Integrações TMS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header class="top">
+    <div class="top__left">
+      <div class="title">
+        <div class="title__h1">Mapa de Integrações TMS</div>
+        <div class="title__sub">Matriz simples de SMP / Multicadastro / RCV</div>
+      </div>
+    </div>
+
+    <div class="top__right">
+      <div class="search">
+        <span class="search__icon" aria-hidden="true">⌕</span>
+        <input id="searchInput" class="search__input" type="text" placeholder="Buscar TMS..." />
+        <button id="clearSearch" class="search__clear" type="button" title="Limpar" aria-label="Limpar">×</button>
+      </div>
+
+      <button id="themeToggle" class="btn" type="button" aria-label="Alternar tema">
+        <span id="themeIcon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="meta">
+      <span id="resultHint" class="meta__hint">Carregando…</span>
+      <div class="meta__actions">
+        <button id="exportBtn" class="btn btn--ghost" type="button">Exportar CSV</button>
+      </div>
+    </div>
+
+    <div class="tableWrap">
+      <table class="table" aria-label="Integrações por TMS">
+        <thead>
+          <tr>
+            <th class="th th--left" data-sort="nome">TMS <span class="sort"></span></th>
+            <th class="th" data-sort="SMP">SMP <span class="sort"></span></th>
+            <th class="th" data-sort="Multicadastro">Multicadastro <span class="sort"></span></th>
+            <th class="th" data-sort="RCV">RCV <span class="sort"></span></th>
+          </tr>
+        </thead>
+        <tbody id="tmsTbody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
