@@ -51,6 +51,7 @@ const tmsList = [
   { nome: "DB FRETE",         SMP: false, Multicadastro: false, RCV: true  },
   { nome: "MITT",             SMP: false, Multicadastro: false, RCV: true  },
   { nome: "DATAMEX ONLINE",   SMP: false, Multicadastro: false, RCV: true  },
+  { nome: "SOFTCENTER",       SMP: false, Multicadastro: false, RCV: true  },
 ];
 
 let state = {
@@ -210,4 +211,5 @@ exportBtn.addEventListener("click", () => {
 
 // Init
 render();
+
 
